@@ -66,3 +66,13 @@ modified (англ. «изменённый»)
 5 Снова добавили в staging area с помощью git add. Состояния: staged (+ tracked).
 6 Сделали коммит. Состояния: tracked.
 7 Повторили пункты 
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+  A --> B;
+``` 
+
