@@ -70,7 +70,9 @@ modified (англ. «изменённый»)
 ```mermaid
 graph LR;
   untracked -- "git add" --> staged;
-  staged    -- "???"     --> tracked/comitted;
+  modified  -- "git add" --> staged;
+  staged    -- "git commit"     --> tracked/comitted;
+  tracked/comitted -- "???"     --> modified;
 
 %% стрелка без текста для примера: 
   A --> B;
